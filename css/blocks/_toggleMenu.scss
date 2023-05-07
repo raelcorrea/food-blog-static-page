@@ -1,0 +1,65 @@
+.toggleMenu{
+    $button:&;
+    background-color: var(--c-blue);
+    border:none;
+    border-radius: 6px;
+    width: 38px;
+    height: 38px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    gap: 5px;
+
+    &__bar{
+        height: .125rem;
+        background-color: #FFF;
+        display: block;
+        width: 100%;
+        position: relative;
+        transition: transform linear 200ms;
+        &::before,&::after{
+            content: '';
+            display: block;
+            width: 100%;
+            height: .125rem;
+            position: absolute;
+            background-color: #FFF;
+            transition: transform linear 200ms;
+        }
+
+        &::before{
+            top: -8px;
+        }
+        &::after{
+            top: 8px;
+        }
+    }
+
+    img,svg{
+        width: 24px;
+        filter: invert(100%);
+    }
+    &.open{
+        opacity: 0.5;
+        #{$button}__bar::before,#{$button}__bar::after{
+            top:0;
+        }
+        #{$button}__bar{
+            background-color: transparent;
+            transform: rotate(180deg);
+        }
+        #{$button}__bar::before{
+            transform: rotate(45deg);
+        }
+        #{$button}__bar::after{
+            transform: rotate(-45deg);   
+        }
+
+    }
+    @include desktop{
+        display: none;
+    }
+}

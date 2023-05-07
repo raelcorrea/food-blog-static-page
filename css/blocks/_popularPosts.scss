@@ -1,0 +1,22 @@
+.popularPosts{
+    padding: 0;
+    margin: 0 2rem;
+    list-style: none;
+    &__title{
+        font-size: .875rem;
+        text-transform: uppercase;
+        line-height: 160%;
+        margin: 0 0 1.5rem;
+    }
+    &__item{
+        margin-bottom: 1rem;
+    }
+    &__link{
+        font-size: .875rem;
+        color: #000;
+        text-decoration: none;
+        font-family: 'Merriweather',serif;
+        line-height: 160%;
+
+    }
+}

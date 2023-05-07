@@ -1,0 +1,53 @@
+.menu{
+    flex-direction: column;
+    list-style-type: none;
+    padding: 0;
+    margin:0;
+    position: absolute;
+    background:var(--c-blue);
+    width: 100%;
+    left: 0;
+    top: -192px;
+    padding:2rem 1rem;
+    gap: 1rem;
+    transition: linear 200ms;
+    perspective: 100;
+    @include desktop{
+        position: static;
+    }
+
+    &__link{
+        color:#FFF;
+        font-size:1.5rem;
+        line-height: 2rem;
+        text-decoration: none;
+        @include desktop{
+            display: block;
+            color:var(--c-silver);
+            font-size: 1.125rem;
+            font-weight: normal;
+            transition: all 200ms;
+            &:hover{
+                font-weight: 600;
+                color: var(--c-blue);
+            }
+        }
+    }
+    @include mobile{
+        display: flex;
+    }
+    &.open{
+        @include mobile{
+            top: 60px;
+        }
+    }
+    @include desktop{
+        display: flex;
+        background-color: transparent;
+        flex-direction: row;
+        width: auto;
+        position: static;
+        gap: 1.25rem;
+    }
+
+}

@@ -1,0 +1,46 @@
+.search{
+    margin-top: 2.5rem;
+    &__fieldset{
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        border: none;
+        position: relative;
+        width: 80%;
+        margin: auto;
+        max-width: 26.6875rem;
+    }
+    &__textbox{
+        border:1px solid #DDDDDD;
+        border-top-left-radius: .3125rem;
+        border-bottom-left-radius: .3125rem;
+        border-right: 0;
+        padding: 1rem 1.5rem;
+        font-family: 'Merriweather',serif;
+        font-size: 1.125rem;
+        width: 100%;
+        outline: none;
+        position: relative;
+        z-index: 0;
+        /* clears the ‘X’ from Internet Explorer */
+        &::-ms-clear { display: none; width : 0; height: 0; }
+        &::-ms-reveal { display: none; width : 0; height: 0; }
+        /* clears the ‘X’ from Chrome */
+        &::-webkit-search-decoration,
+        &::-webkit-search-cancel-button,
+        &::-webkit-search-results-button,
+        &::-webkit-search-results-decoration { display: none; }
+    }
+    &__button{
+        border-top-right-radius: .3125rem;
+        border-bottom-right-radius: .3125rem;
+        border:1px solid #DDDDDD;
+        border-left: none;
+        padding: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+    }
+
+}

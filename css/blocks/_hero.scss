@@ -1,0 +1,28 @@
+.hero{
+    margin-top: 6.4375rem;
+    &__container{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    &__title{
+        text-align: center;
+        font-size:1.9rem;
+        font-family: 'Merriweather',serif;
+        font-weight: 900;
+        color: var(--c-blue);
+        margin: 0 0 1rem;
+        @include desktop{
+            font-size: 3rem;
+        }
+    }
+    &__text{
+        color:var(--c-grey);
+        text-align: center;
+        margin: 0 0 1rem;
+        @include desktop{
+            font-size: 1.25rem;
+        }
+    }
+}

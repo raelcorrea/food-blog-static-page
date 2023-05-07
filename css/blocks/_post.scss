@@ -1,0 +1,50 @@
+.post{
+    margin-top: 5rem;
+    display: flex;
+    &__container{
+        gap: 5rem;
+        display: flex;
+        flex-direction: column;
+        @include desktop{
+            flex-direction: row;
+        }
+    }
+    &__item{
+        width: 100%;
+        box-sizing:border-box ;
+    }
+    &__image{
+        border-radius: 5px;
+        margin-bottom: 1.25rem;
+        width: 100%;
+    }
+    &__tag{
+        display: inline-block;
+        background-color: var(--c-blue);
+        color:var(--c-white);
+        font-weight: 500;
+        font-size: .875rem;
+        padding:.3125rem 1rem;
+        border-radius: 3px;
+        text-decoration: none;
+    }
+    &__title{
+        font-weight: bold;
+        font-family: 'Merriweather',serif;
+        font-size: 24px;
+        width: 100%;
+        line-height: 140%;
+        color:var(--c-black);
+        margin: .5rem 0;
+    }
+    &__time{
+        margin: 0;
+        font-size: .875rem;
+        color:var(--c-grey);
+    }
+    &__text{
+        margin: 1rem 0;
+        line-height: 160%;
+        color:var(--c-grey)
+    }
+}

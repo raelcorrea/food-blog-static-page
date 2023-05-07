@@ -1,0 +1,13 @@
+.subsAndPopularPosts{
+    margin-top: 4.5rem;
+    &__container{
+        display: flex;
+        justify-content: space-between;
+        gap:1rem;
+        align-items:start;
+        flex-direction: column;
+        @include desktop{
+            flex-direction: row;
+        }
+    }
+}

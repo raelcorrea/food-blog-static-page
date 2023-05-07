@@ -1,0 +1,51 @@
+.pagination{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap:1rem;
+    margin: 9.5rem 0 4.25rem;
+    padding: 0 1rem;
+    box-sizing: border-box;
+        
+    &__item{
+        display: inline-flex;
+    }
+    &__link{
+        display: flex;
+        background:var(--c-light-grey);
+        border-radius: 100%;
+        width: 32px;
+        height: 32px;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        font-weight: bold;
+        color:var(--c-grey);
+        font-size: 1rem;
+        @include desktop{
+            width: 42px;
+            height: 42px;
+        }
+        &--active{
+            background-color: var(--c-blue);
+            color:var(--c-white);
+        }
+    }
+    &__dots{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        width: 32px;
+        height: 32px;
+        font-size: 1rem;
+        font-weight: bold;
+        color: var(--c-grey);
+        @include desktop{
+            width: 42px;
+            height: 42px;
+            font-size: 1.5rem;
+        }
+    }
+
+}

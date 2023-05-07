@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <header class="navigation">
+        <div class="container navigation__container">
+            <a href="/" class="brand">Food Ninja</a>
+            <button id="toggleMenu" class="toggleMenu">
+                <span class="toggleMenu__bar"></span>
+            </button>
+            <nav id="menu" class="menu">
+                <a href="#" class="menu__link">Blog</a>
+                <a href="#" class="menu__link">About</a>
+                <a href="#" class="menu__link">Contact</a>
+            </nav>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="container hero__container">
+            <h1 class="hero__title">The Food Ninja Blog</h1>
+            <p class="hero__text">A blog about food, experiences and recipes.</p>
+            <form class="search">
+                <fieldset class="search__fieldset">
+                    <input type="text" name="q" class="search__textbox" placeholder="Search for article">
+                    <button type="submit" class="search__button"><img src="/images/search.svg" alrt=""></button>
+                </fieldset>
+            </form>
+        </div>
+    </section>
+    <section class="post">
+        <div class="container post__container">
+            <article class="post__item">
+                <img src="images/post-1.png" alt="" class="post__image"><br>
+                <a href="#" class="post__tag">Travel</a>
+                <h2 class="post__title">What Traveling Greece For 2 Weeks Taught Me About Life</h2>
+                <time class="post__time">Jun 21, 2021 • 11 min read</time>
+                <p class="post__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam mollis lectus vitae nulla malesuada amet purus sed. A condimentum tempus a egestas sodales diam cras.</p>
+                <p class="author">
+                    <img src="images/author.png" alt="" class="author__picture"> George Costanza
+                </p>
+            </article>
+            <article class="post__item">
+                <img src="images/post-1.png" alt="" class="post__image"><br>
+                <a href="#" class="post__tag">Travel</a>
+                <h2 class="post__title">What Traveling Greece For 2 Weeks Taught Me About Life</h2>
+                <time class="post__time">Jun 21, 2021 • 11 min read</time>
+                <p class="post__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam mollis lectus vitae nulla malesuada amet purus sed. A condimentum tempus a egestas sodales diam cras.</p>
+                <p class="author">
+                    <img src="images/author.png" alt="" class="author__picture"> George Costanza
+                </p>
+            </article>
+        </div>
+    </section>
+    <ul class="pagination">
+        <li class="pagination__item"><a href="#" class="pagination__link pagination__link--active">1</a></li>
+        <li class="pagination__item"><a href="#" class="pagination__link">2</a></li>
+        <li class="pagination__item"><a href="#" class="pagination__link">3</a></li>
+        <li class="pagination__item"><a href="#" class="pagination__link">4</a></li>
+        <li class="pagination__item"><span class="pagination__dots">...</span></li>
+        <li class="pagination__item"><a href="#" class="pagination__link">13</a></li>
+    </ul>
+    <section class="subsAndPopularPosts">
+        <div class="container subsAndPopularPosts__container">
+            <form class="newsletter">
+                <h3 class="newsletter__title">Subscribe To Our Newsletter</h3>
+                <p class="newsletter__text">Get weekly food news, articles, and videos delivered to your inbox.</p>
+                <input type="email" name="email" placeholder="E-mail" class="newsletter__textbox">
+                <button type="submit" class="newsletter__button">Subscribe</button>
+            </form>
+            <ul class="popularPosts">
+                <h3 class="popularPosts__title">Popular Posts</h3>
+                <li class="popularPosts__item"><a href="#" class="popularPosts__link">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a></li>
+                <li class="popularPosts__item"><a href="#" class="popularPosts__link">Dicta cupiditate voluptatibus libero a ea in culpa iusto, consequuntur molestias officiis? </a></li>
+                <li class="popularPosts__item"><a href="#" class="popularPosts__link">Aut temporibus sed, fuga iure adipisci quae molestiae odio qui!</a></li>
+            </ul>
+            <ul class="popularPosts">
+                <h3 class="popularPosts__title">Recent Posts</h3>
+                <li class="popularPosts__item"><a href="#" class="popularPosts__link">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a></li>
+                <li class="popularPosts__item"><a href="#" class="popularPosts__link">Dicta cupiditate voluptatibus libero a ea in culpa iusto, consequuntur molestias officiis? </a></li>
+                <li class="popularPosts__item"><a href="#" class="popularPosts__link">Aut temporibus sed, fuga iure adipisci quae molestiae odio qui!</a></li>
+            </ul>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container footer__container">
+            <ul class="footer__menu">
+                <li class="footer__menuItem"><a href="#" class="footer__menuLink">About</a></li>
+                <li class="footer__menuItem"><a href="#" class="footer__menuLink">Privacy Policy</a></li>
+                <li class="footer__menuItem"><a href="#" class="footer__menuLink">Contact</a></li>
+            </ul>
+            <p class="footer__copy">Copyright © 2021 Food Ninja Blog. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="/js/main.js"></script>    
+</body>
+</html>

@@ -1,0 +1,30 @@
+.footer{
+    margin-top: 2.5rem;
+    background-color: var(--c-light-grey);
+    padding: 2.25rem 0;
+    &__menu{
+        display: flex;
+        gap: 1rem;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        justify-content: center;
+        margin-bottom: 1.625rem;
+    }
+
+    &__menuLink{
+        font-size: .875rem;
+        font-family: 'Merriweather',serif;
+        font-weight: normal;
+        color:var(--c-grey);
+        text-decoration: none;
+    }
+
+    &__copy{
+        font-size: .875rem;
+        font-family: 'Merriweather',serif;
+        font-weight: 900;
+        color:#3E3E3E;
+        text-align: center;
+    }
+}

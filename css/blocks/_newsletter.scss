@@ -1,0 +1,36 @@
+.newsletter{
+    background-color: var(--c-blue-1);
+    color:var(--c-white);
+    padding:2rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    &__title{
+        font-family: 'Merriweather',serif;
+        font-size: 1.5rem;
+        text-align: center;
+        margin: 0;
+        line-height: 160%;
+    }
+    &__text{
+        text-align: center;
+        margin: 0;
+        font-size:1rem;
+    }
+    &__textbox{
+        padding: .6875rem .9375rem;
+        border-radius: .1875rem;
+        border:none;
+    }
+    &__button{
+        color:#FFF;
+        background-color: var(--c-blue);
+        border:none;
+        padding:1.125rem .625rem;
+        max-width: 7.5rem;
+        font-size: 1.125rem;
+    }
+
+}
